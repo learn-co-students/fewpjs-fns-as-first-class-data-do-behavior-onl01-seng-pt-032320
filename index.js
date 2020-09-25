@@ -1,5 +1,6 @@
 /* Given Code, don't edit */
 
+
 document.querySelector("button").addEventListener("click", handleClick);
 
 function handleClick(e) {
@@ -14,16 +15,19 @@ function greet(time){
   const parsed = parseInt(time, 10);
   if (parsed < 12.00){
     return "Good Morning"
+  } 
+  else if (parsed > 12.00 && parsed < 17.00){
+    return "Good Afternoon"
+  } 
+  else {
+    return "Good Evening"
   }
-    elsif (parsed > 12.00 && parsed < 17.00){
-      return "Good Afternoon"
-    }
-    elsif(parsed > 17.00){
-      return "Good Evening"
-    }
 }
 /* Write your implementation of displayMessage() */
 
 function displayMessage(str){
+  debugger
+  let message = document.querySelector("h1#greeting")
+  message.innerHTML = str 
 
 }
