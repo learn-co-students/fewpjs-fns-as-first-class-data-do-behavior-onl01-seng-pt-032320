@@ -26,8 +26,9 @@ function greet(time){
 /* Write your implementation of displayMessage() */
 
 function displayMessage(str){
-  debugger
+  // let message = document.getElementById("greeting")
   let message = document.querySelector("h1#greeting")
-  message.innerHTML = str 
+  message.innerText = str 
+  
 
 }
