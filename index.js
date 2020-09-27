@@ -29,8 +29,9 @@ function greet(time) {
   
 }
   
-// function display(update){ 
-//   let update = "Test"
-//   document.querySelector('#input');
-   
-//   }
+//update the DOM
+  function displayMessage(greet){
+    let element = document.querySelector("input#time");
+    element.innerHTML = 'TEST'
+  } 
+  
